@@ -1,0 +1,117 @@
+@import url(./reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+    font-family: 'Harabara Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Harabara Bold'), url('Harabara.woff') format('woff');
+    }
+
+:root{
+    --bg-color: #EAFCFC;
+    --text-color: #201F1F;
+
+    --accent: #00AF8D;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.container{
+    max-width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    padding:  42px 50px;
+    justify-content: space-between;
+}
+
+.logo img{
+    height: 29px;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    column-gap: 27px;
+    font-weight: 500;
+}
+
+.btn{
+    background-color: #CFEBF9;
+    padding: 13px;
+    border-radius: 12px;
+}
+
+.content{
+    display: flex;
+}
+.left-container{
+    width: 50%;
+    padding: 110px 50px;
+}
+.people {
+   position: absolute;
+   bottom: 0;
+   left: 40%; 
+   z-index: -2;
+}
+
+.tree {
+    position: absolute;
+    bottom: 0;
+    left: 40%; 
+ }
+
+.rectangle{
+    transform: skew(-20deg);
+    top: 0;
+    right: 46%;
+    z-index: -1;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.main-text{
+    font-family: 'Harabara Bold';
+    font-size: 90px;
+    color: var(--accent);
+}
+
+.second-text{
+    padding-top: 37px;
+    font-size: 16px;
+}
+
+.call-to-action{
+    display: flex;
+    padding-top: 40px;
+    column-gap: 15px;
+}
+.main-btn{
+    background-color: var(--accent);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+.second-btn{
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #CFEBF9;
+}
